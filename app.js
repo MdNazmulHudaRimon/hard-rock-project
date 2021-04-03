@@ -1,11 +1,13 @@
 const searchSongs =  () =>{
     const searchText = document.getElementById('search-field').value;
     const url = `https://api.lyrics.ovh/suggest/${searchText}`;
+    toggleSpinner();
     fetch(url)
     .then(res => res.json())
     .then(data =>{
         displaySongs(data.data);
     })
+    .catch(error => console.log(error));
 }
 const displaySongs = songs => {
     const songList = document.getElementById('songs-list');
@@ -25,6 +27,7 @@ const displaySongs = songs => {
         </div>`
         ;
         songList.appendChild(songDiv);
+        toggleSpinner();
     });
 }
 
@@ -36,8 +39,22 @@ const getLyric =(artist,title) =>{
     .then(data =>{
         displayLryics(data.lyrics);
     })
+    .catch(error => console.log(error));
 }
 const displayLryics = lyrics =>{
     const lyricsDiv = document.getElementById("song-lyrics");
     lyricsDiv.innerText = lyrics;
 }
+
+const toggleSpinner = (show) =>{
+    const spinner = document.getElementById('spinner');
+    spinner.classList.toggle('d-none');
+}
+
+var srcBtn = document.getElementById('search-button');
+document.getElementById('search-field').addEventListener('keypress',function(event){
+    // event.preventDefault();
+    if(event.key === 'Enter'){
+        srcBtn.click();
+    }
+})
