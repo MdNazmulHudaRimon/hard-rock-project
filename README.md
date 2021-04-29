@@ -11,3 +11,4 @@ example: https://api.lyrics.ovh/v1/Adele/Hello
 # hard-rock
 # hard-rock
 "# hard-rock-project" 
+"# hard-rock-project" 
