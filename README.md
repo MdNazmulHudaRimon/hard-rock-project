@@ -1,13 +1,10 @@
 # hard-rock-solution
+#Live Site Link : https://mdnazmulhudarimon.github.io/hard-rock-project/
 ### Search Song
 api link: https://api.lyrics.ovh/suggest/:searchText
-
-example: https://api.lyrics.ovh/suggest/hello
-
 ### Lyric
 lyric link: https://api.lyrics.ovh/v1/:artist/:title
 
-example: https://api.lyrics.ovh/v1/Adele/Hello
 # hard-rock
 # hard-rock
 "# hard-rock-project" 
