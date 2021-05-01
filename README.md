@@ -1,5 +1,5 @@
 # hard-rock-solution
-#Live Site Link : https://mdnazmulhudarimon.github.io/hard-rock-project/
+#Live Site Link : https://nazmulhudaa.github.io/hard-rock-project/
 ### Search Song
 api link: https://api.lyrics.ovh/suggest/:searchText
 ### Lyric
